@@ -1,116 +1,114 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #2196F3; /* Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
-header .coins {
-    font-size: 1.2em;
+#coin-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+/* Avatar Section Styles */
+#avatars {
+  padding: 20px;
 }
 
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
 }
 
-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+.avatar-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease; /* Smooth hover effect */
 }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.avatar-item:hover {
+  transform: translateY(-5px); /* Slightly elevate on hover */
 }
 
-.item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
-    transition: transform 0.2s;
+.avatar-item img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 5px;
 }
 
-.item img {
-    max-width: 100%;
-    border-radius: 8px;
+.add-to-cart {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
 }
 
-.item:hover {
-    transform: scale(1.05);
+.add-to-cart:hover {
+  background-color: #3e8e41; /* Darker green */
 }
 
-.cart {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 20%;
-    position: fixed;
-    right: 20px;
-    top: 100px;
+/* Pet Section Styles */
+#pets {
+  padding: 20px;
 }
 
-.cart h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
 }
 
-.cart ul {
-    list-style-type: none;
-    padding: 0;
+.pet-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease; /* Smooth hover effect */
 }
 
-.cart li {
-    margin-bottom: 10px;
+.pet-item:hover {
+  transform: translateY(-5px); /* Slightly elevate on hover */
 }
 
-.cart p {
-    font-size: 1.2em;
-    font-weight: bold;
+.pet-item img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Shopping Cart Styles */
+#shopping-cart {
+  padding: 20px;
+}
 
-    section {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+#cart-items {
+  /* You'll add styles for individual cart items here later */
+}
 
-    .cart {
-        width: 90%;
-        position: static;
-    }
+#total-price {
+  margin-top: 10px;
+  font-weight: bold;
 }
