@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="avatar.css">
+    <script defer src="avatar.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ONLINE STORE</h1>
+        <div class="coins">
+            Total Coins: <span id="total-coins">20 OC</span>
+        </div>
+    </header>
+    <main>
+        <section class="avatar-section">
+            <h2>Avatars</h2>
+            <div class="grid">
+                <div class="item avatar" data-name="Avatar" data-price="5">
+                    <img src="https://i.pinimg.com/736x/9d/a4/a3/9da4a3b63aad13947092a9384ec38b46.jpg" alt="Avatar 1">
+                    <p>Avatar 1</p>
+
+                    <p>BUY: 5 OC</p>
+                </div>
+                <div class="item avatar" data-name="Avatar 2" data-price="10">
+                    <img src="https://img.freepik.com/premium-photo/cool-anime-emo-girl-avatar_950633-1656.jpg" alt="Avatar 2">
+                    <p>Avatar 2</p>
+                    <p>BUY: 10 OC</p>
+                </div>
+                <!-- Add more avatar items as needed -->
+            </div>
+        </section>
+        <section class="pets-section">
+            <h2>Pets</h2>
+            <div class="grid">
+                <div class="item pet" data-name="Pet 1" data-price="7">
+                    <img src="https://static.vecteezy.com/system/resources/previews/034/638/854/non_2x/ai-generated-cute-dog-avatar-icon-clip-art-sticker-decoration-simple-background-free-photo.jpg" alt="Pet 1">
+                    <p>Pet 1</p>
+                    <p>BUY: 7 OC</p>
+                </div>
+                <div class="item pet" data-name="Pet 2" data-price="12">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrwuwszMZrEmcXaK1sidLy30pLuzvjS0ejw&s" alt="Pet 2">
+                    <p>Pet 2</p>
+                    <p>BUY: 12 OC</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <aside class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: <span id="cart-total">0 items</span></p>
+    </aside>
+</body>
+</html>
